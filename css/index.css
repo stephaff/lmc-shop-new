@@ -593,8 +593,14 @@ footer{
 /* mobile design */
 
 @media screen and (max-width : 375px) {
+  body{
+    width: 100vw;
+  }
   header{
     width: 100vw;
+  }
+  .slide-bar{
+    width: 300px;
   }
   .header-top{
     height: 60px;
@@ -687,7 +693,7 @@ footer{
     width: 92%;
   }
  .article-price h3, .article-command{
-    width: 270px;
+    width: 85%;
   }
   .btn-buy{
     width: 190px;
