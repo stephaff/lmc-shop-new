@@ -593,18 +593,15 @@ footer{
 /* mobile design */
 
 @media screen and (max-width : 375px) {
-  body{
-    width: 100vw;
-  }
   header{
-    width: 100vw;
+    width: 100%;
   }
   .slide-bar{
     width: 300px;
   }
   .header-top{
     height: 60px;
-    width: 100vw;
+    width: 100%;
     padding: 1rem;
   }
   .header-top-content{
@@ -634,11 +631,11 @@ footer{
   }
   .header-middle{
     height: 375px;
-    width: 100vw;
+    width: 100%;
     background-position: right;
   }
   .header-middle-content{
-    width: 100vw;
+    width: 100%;
     padding-left: 2rem;
   }
   .header-middle-content h1{
@@ -654,7 +651,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     height: auto;
-    width: 100vw;
+    width: 100%;
+    padding: 2rem 0;
   }
   .header-bottom-choice-1{
     width: 95%;
@@ -687,7 +685,7 @@ footer{
     margin-left: 1.6rem;
   }
   .main-right{
-    width: 100vw;
+    width: 100%;
   }
   .article{
     width: 92%;
@@ -707,7 +705,7 @@ footer{
     width: 65px;
   }
   footer{
-    width: 100vw;
+    width: 100%;
   }
 }
   
