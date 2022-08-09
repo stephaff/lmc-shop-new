@@ -48,9 +48,14 @@
         </div>
         <div class="header-top">
             <div class="header-top-content">
-                <div class="header-top-search">
-                    <input type="text" placeholder="Rechercher un produit...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="search-bar">
+                    <div class="header-top-search">
+                        <input type="text" placeholder="Rechercher un produit...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <button class="btn-close-search-bar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
                 <h2 class="header-top-logo"><span>LMC-</span>Shop</h2>
                 <div class="header-top-left">
@@ -68,15 +73,32 @@
                     <button class="btn btn-inscription">Inscription</button>
                 </div>
                 <div class="mobile-icon">
-                    <i class="fa-solid fa-magnifying-glass icon"></i>
-                    <i class="fa-solid fa-bars icon"></i>
+                    <div class="icon-1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="icon-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </div>
             <nav class="header-top-navbar">
+                <button class="btn-close-navbar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
                 <a href="">Catégories</a>
                 <a href="">Vêtements</a>
                 <a href="">Accessoires</a>
-                <a href="">Chaussures</a>    
+                <a href="">Chaussures</a> 
+                <select name="languages" id="languages">
+                    <option value="french">Français</option>
+                    <option value="english">Anglais</option>
+                    <option value="chinese">Chinois</option>
+                </select>
+                <select name="devises" id="devises">
+                    <option value="xof">XOF</option>
+                    <option value="usd">USD</option>
+                    <option value="str">STR</option>
+                </select>   
             </nav>
         </div>
         <div class="header-middle">

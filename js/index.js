@@ -34,3 +34,40 @@ function closePopularWindow(){
     popular.classList.remove('open-popular');   
 }
 
+const openSearchBar = document.querySelector('.icon-1');
+
+openSearchBar.addEventListener('click', openSearchBarWindow);
+
+function openSearchBarWindow(){
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.classList.add('display-search-bar');   
+}
+
+const closeSearchBar = document.querySelector('.btn-close-search-bar');
+
+closeSearchBar.addEventListener('click', closeSearchBarWindow);
+
+function closeSearchBarWindow(){
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.classList.remove('display-search-bar');   
+}
+
+const openNavbar = document.querySelector('.icon-2');
+
+openNavbar.addEventListener('click', openNavbarWindow);
+
+function openNavbarWindow(){
+    const navbar = document.querySelector('.header-top-navbar');
+    navbar.classList.add('display-navbar');   
+}
+
+const closeNavbar = document.querySelector('.btn-close-navbar');
+
+closeNavbar.addEventListener('click', closeNavbarWindow);
+
+function closeNavbarWindow(){
+    const navbar = document.querySelector('.header-top-navbar');
+    navbar.classList.remove('display-navbar');   
+}
+
+
