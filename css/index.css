@@ -566,10 +566,7 @@ footer{
 
 /* mobile design */
 
-@media (max-width : 375px) {
-  .slide-bar{
-    height: 100vh;
-  }
+@media screen and (max-width : 375px) {
   .header-top{
     height: 60px;
     width: auto;
