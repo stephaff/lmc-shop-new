@@ -593,9 +593,12 @@ footer{
 /* mobile design */
 
 @media screen and (max-width : 375px) {
+  header{
+    width: 100vw;
+  }
   .header-top{
     height: 60px;
-    width: auto;
+    width: 100vw;
     padding: 1rem;
   }
   .header-top-content{
@@ -625,35 +628,36 @@ footer{
   }
   .header-middle{
     height: 375px;
-    width: 375px;
+    width: 100vw;
     background-position: right;
   }
   .header-middle-content{
-    width: 330px;
+    width: 100vw;
+    padding-left: 2rem;
   }
   .header-middle-content h1{
     font-size: 22px;
-    width: 330px;
+    width: 95%;
   }
   .header-middle-content p{
     font-size: 13px;
     line-height: normal;
-    width: 330px;
+    width: 88%;
   }
   .header-bottom{
     flex-direction: column;
+    justify-content: center;
     height: auto;
-    width: auto;
-    margin: 1rem;
+    width: 100vw;
   }
   .header-bottom-choice-1{
-    width: 358px;
+    width: 95%;
   }
   .header-bottom-choice-2{
-    width: 358px;
+    width: 95%;
   }
   .header-bottom-choice-3{
-    width: 358px;
+    width: 95%;
   }
   .main-left{
     position: fixed;
@@ -676,8 +680,11 @@ footer{
     margin-right: auto;
     margin-left: 1.6rem;
   }
+  .main-right{
+    width: 100vw;
+  }
   .article{
-    width: 340px;
+    width: 92%;
   }
  .article-price h3, .article-command{
     width: 270px;
@@ -692,6 +699,9 @@ footer{
   }
   .btn-plus{
     width: 65px;
+  }
+  footer{
+    width: 100vw;
   }
 }
   
