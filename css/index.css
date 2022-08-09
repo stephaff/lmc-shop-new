@@ -592,7 +592,7 @@ footer{
 
 /* mobile design */
 
-@media screen and (max-width : 375px) {
+@media screen and (max-width : 576px) {
   header{
     width: 100%;
   }
