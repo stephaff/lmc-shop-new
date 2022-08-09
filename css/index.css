@@ -625,22 +625,23 @@ footer{
   }
   .header-top{
     height: 60px;
-    width: 100%;
+    width: 100vw;
     padding: 1rem;
+    border: 1px solid blue;
   }
   .header-top-content{
     height: 60px;
     border-bottom: none;
   }
   .search-bar{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -400px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
     transition: 0.3s linear;
   }
@@ -695,7 +696,7 @@ footer{
   .header-middle{
     position: relative;
     height: 375px;
-    width: 100%;
+    width: 100vw;
     background-position: right;
   }
   .header-middle::before{
@@ -704,12 +705,12 @@ footer{
     top: 0;
     left: 0;
     height: 375px;
-    width: 100%;
+    width: 100vw;
     background-color: #000;
     opacity: 0.5;
   }
   .header-middle-content{
-    width: 100%;
+    width: 100vw;
     padding-left: 2rem;
     z-index: 1;
   }
@@ -726,7 +727,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     height: auto;
-    width: 100%;
+    width: 100vw;
     padding: 2rem 0;
   }
   .header-bottom-choice-1{
@@ -760,7 +761,7 @@ footer{
     margin-left: 1.6rem;
   }
   .main-right{
-    width: 100%;
+    width: 100vw;
   }
   .article{
     width: 92%;
@@ -780,7 +781,7 @@ footer{
     width: 65px;
   }
   footer{
-    width: 100%;
+    width: 100vw;
   }
 }
   
