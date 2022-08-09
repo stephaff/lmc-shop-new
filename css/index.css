@@ -747,6 +747,7 @@ footer{
     background-color: #fff;
     box-shadow: none;
     transition: 0.3s linear;
+    z-index: 5;
   }
   .close-popular{
     display: flex;
