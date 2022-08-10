@@ -70,4 +70,28 @@ function closeNavbarWindow(){
     navbar.classList.remove('display-navbar');   
 }
 
+document.addEventListener('scroll', displayScroller);
+
+function displayScroller(){
+    const scroller = document.querySelector('.scroller');
+    if (scrollY > 140) {
+        scroller.classList.add('display-scroller');
+    } else {
+        scroller.classList.remove('display-scroller');
+    }
+}
+
+const scroller = document.querySelector('.scroller');
+
+scroller.addEventListener('click', goTop);
+
+function goTop(){
+    scrollTo(
+        {
+            top: 0,
+            behavior: "smooth"
+        }
+    );   
+}
+
 
