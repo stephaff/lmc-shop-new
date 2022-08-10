@@ -141,6 +141,7 @@ body {
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+  display: none;
 }
 .slide-bar-content{
   display: flex;
@@ -276,6 +277,7 @@ body {
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+  display: none;
 }
 .header-top-logo{
   cursor: pointer;
@@ -696,6 +698,12 @@ footer{
   }
   select{
     display: none;
+  }
+  .btn-close-search-bar{
+    display: flex;
+  }
+  .btn-close-navbar{
+    display: flex;
   }
   .header-top-navbar{
     position: fixed;
