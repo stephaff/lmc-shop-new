@@ -16,23 +16,23 @@ function close(){
     slideBar.classList.toggle('open-slide-bar');
 }
 
-const filtre = document.querySelector('.filter');
+// const filtre = document.querySelector('.filter');
 
-filtre.addEventListener('click', openPopular);
+// filtre.addEventListener('click', openPopular);
 
-function openPopular(){
-    const popular = document.querySelector('.main-left');
-    popular.classList.add('open-popular');   
-}
+// function openPopular(){
+//     const popular = document.querySelector('.main-left');
+//     popular.classList.add('open-popular');   
+// }
 
-const closePopular = document.querySelector('.close-popular');
+// const closePopular = document.querySelector('.close-popular');
 
-closePopular.addEventListener('click', closePopularWindow);
+// closePopular.addEventListener('click', closePopularWindow);
 
-function closePopularWindow(){
-    const popular = document.querySelector('.main-left');
-    popular.classList.remove('open-popular');   
-}
+// function closePopularWindow(){
+//     const popular = document.querySelector('.main-left');
+//     popular.classList.remove('open-popular');   
+// }
 
 const openSearchBar = document.querySelector('.icon-1');
 
@@ -82,6 +82,8 @@ function displayScroller(){
 }
 
 const scroller = document.querySelector('.scroller');
+
+console.log(scroller)
 
 scroller.addEventListener('click', goTop);
 
