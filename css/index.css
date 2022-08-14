@@ -822,7 +822,7 @@ footer{
   .header-bottom-choice-3{
     width: 95%;
   }
-  /* .main-left{
+  .main-left{
     position: fixed;
     top: 0;
     left: -300px;
@@ -831,7 +831,7 @@ footer{
     box-shadow: none;
     transition: 0.3s linear;
     z-index: 5;
-  } */
+  }
   .close-popular{
     display: flex;
   }
