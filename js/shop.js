@@ -1,3 +1,21 @@
+const logo = document.querySelector('.header-top-logo');
+
+logo.addEventListener('click', openIndexPage);
+
+function openIndexPage(){
+    location = 'index.html';
+}
+
+const btnBuy = document.querySelectorAll('.btn-buy');
+
+btnBuy.forEach(elt =>{
+    return elt.addEventListener('click', openDetailsPage);
+});
+
+function openDetailsPage(){
+    location = 'details--articles.html';
+}
+
 const cart = document.querySelector('.cart');
 
 cart.addEventListener('click', open);

@@ -5,30 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/details--articles.css">
-    <title>LMC-Shop</title>
+    <title>LMC-shop</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="header-top">
-                <div class="header-top-search">
-                    <input type="text" name="searchBar" id="searchBar" placeholder="Rechercher un produit...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+    <header>
+        <!-- <div class="cart">
+            <span class="cart-quantity">1</span>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div> -->
+        <div class="slide-bar">
+            <div class="slide-bar-top">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p><span>3</span> articles</p>
+                <button class="btn-close-slide-bar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="slide-bar-content">
+                <div class="slide-bar-manage-quantity">
+                    <span class="slide-bar-btn-plus">+</span><span>1</span><span class="slide-bar-btn-moins">-</span>
                 </div>
-                <h2 class="haeder-top-logo"><span>LMC-</span>Shop</h2>
-                <div class="header-top-options">
-                    <select name="language" id="language">
-                        <option value="francais">Français</option>
-                        <option value="anglais">Anglais</option>
-                        <option value="chinois">Chinois</option>
+                <div class="slide-bar-article">
+                    <img src="images/jupe.png" alt="jupe" height="60" width="70">
+                    <p>
+                        Jupe volante <br>
+                        <span>2000 F</span><br>
+                        3 unités
+                    </p>
+                </div>
+                <button class="btn-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="slide-bar-bottom">
+                <a href="">Avez-vous un coupon ?</a>
+                <div class="total-command">
+                    <span class="command-label">Mon panier</span>
+                    <span class="command-price">1002000frs</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="search-bar">
+                    <div class="header-top-search">
+                        <input type="text" placeholder="Rechercher un produit...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <button class="btn-close-search-bar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <h2 class="header-top-logo"><span>LMC-</span>Shop</h2>
+                <div class="header-top-left">
+                    <select name="languages" id="languages">
+                        <option value="french">Français</option>
+                        <option value="english">Anglais</option>
+                        <option value="chinese">Chinois</option>
                     </select>
-                    <select name="devise" id="devise">
-                        <option value="francais">XOF</option>
-                        <option value="anglais">USD</option>
-                        <option value="chinois">STR</option>
+                    <select name="devises" id="devises">
+                        <option value="xof">XOF</option>
+                        <option value="usd">USD</option>
+                        <option value="str">STR</option>
                     </select>
-                    <div class="header-right">
+                    <div class="client-container">
                         <div class="client">
                             <div class="client-avatar">
                                 <img src="icons/Ellipse 1.png" alt="avatar">
@@ -44,107 +86,142 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <main>
-            <div class="main-articles-top">
-                <div class="main-articles-top-left">
-                    <div class="main-articles-left-top">
-                        <img src="images/jupe.png" alt="" width="300" height="300">
+                <div class="mobile-icon">
+                    <div class="icon-1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <div class="main-articles-left-bottom">
-                       <div class="main-articles-left-bottom-image">
-                        <img src="images/jupe.png" alt="">
-                       </div> 
-                       <div class="main-articles-left-bottom-image">
-                        <img src="images/xbanner-01.jpg.pagespeed.ic.Uj5FE94mgU.webp" alt="">
-                       </div> 
-                       <div class="main-articles-left-bottom-image">
-                        <img src="images/xbanner-02.jpg.pagespeed.ic.MQuZq6F18q.webp" alt="">
-                       </div> 
-                       <div class="main-articles-left-bottom-image">
-                        <img src="images/xbanner-03.jpg.pagespeed.ic.1rqLomOaMb.webp" alt="">
-                       </div> 
-                    </div>
-                </div>
-                <div class="main-articles-top-right">
-                    <h2>Jupe Volante</h2>
-                    <h2 style="color: var(--blue);">3 000 F / Unité</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magni nesciunt. Laborum, natus ullam</p>
-                    <p>vente en gros à partir de 7 unités*</p>
-                    <div class="main-articles-top-right-button">
-                        <button class="btn-add-cart"><i class="fa-solid fa-bag-shopping bag"></i>Ajouter au panier</button>
-                        <button class="btn-buy">Acheter</button>
+                    <div class="icon-2">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
             </div>
-            <div class="main-articles-bottom">
-                <p class="main-articles-bottom-title">Articles connexes</p>
-                <div class="main-articles-bottom-articles">
-                    <div class="article">
-                        <div class="article-image">
-                            <img src="images/jupe.png" alt="jupe">
-                        </div>
-                        <div class="article-price">
-                            <h3>Jupe volante</h3>
-                            <p><span>3500F</span> / unité</p>
-                            <p><span>1500F</span> / à partir de 5 unités</p>
-                        </div>
-                        <div class="article-command">
-                            <button class="btn-buy">Acheter</button>
-                            <button class="btn-plus">+</button>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-image">
-                            <img src="images/jupe.png" alt="jupe">
-                        </div>
-                        <div class="article-price">
-                            <h3>Jupe volante</h3>
-                            <p><span>3500F</span> / unité</p>
-                            <p><span>1500F</span> / à partir de 5 unités</p>
-                        </div>
-                        <div class="article-command">
-                            <button class="btn-buy">Acheter</button>
-                            <button class="btn-plus">+</button>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-image">
-                            <img src="images/jupe.png" alt="jupe">
-                        </div>
-                        <div class="article-price">
-                            <h3>Jupe volante</h3>
-                            <p><span>3500F</span> / unité</p>
-                            <p><span>1500F</span> / à partir de 5 unités</p>
-                        </div>
-                        <div class="article-command">
-                            <button class="btn-buy">Acheter</button>
-                            <button class="btn-plus">+</button>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-image">
-                            <img src="images/jupe.png" alt="jupe">
-                        </div>
-                        <div class="article-price">
-                            <h3>Jupe volante</h3>
-                            <p><span>3500F</span> / unité</p>
-                            <p><span>1500F</span> / à partir de 5 unités</p>
-                        </div>
-                        <div class="article-command">
-                            <button class="btn-buy">Acheter</button>
-                            <button class="btn-plus">+</button>
-                        </div>
-                    </div>
+            <nav class="header-top-navbar">
+                <button class="btn-close-navbar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <a href="">Catégories</a>
+                <a href="">Vêtements</a>
+                <a href="">Accessoires</a>
+                <a href="">Chaussures</a> 
+                <select name="languages" id="languages">
+                    <option value="french">Français</option>
+                    <option value="english">Anglais</option>
+                    <option value="chinese">Chinois</option>
+                </select>
+                <select name="devises" id="devises">
+                    <option value="xof">XOF</option>
+                    <option value="usd">USD</option>
+                    <option value="str">STR</option>
+                </select>   
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-articles-top">
+            <div class="main-articles-top-left">
+                <div class="main-articles-left-top">
+                    <img src="images/jupe.png" alt="">
+                </div>
+                <div class="main-articles-left-bottom">
+                   <div class="main-articles-left-bottom-image">
+                    <img src="images/jupe.png" alt="">
+                   </div> 
+                   <div class="main-articles-left-bottom-image">
+                    <img src="images/xbanner-01.jpg.pagespeed.ic.Uj5FE94mgU.webp" alt="">
+                   </div> 
+                   <div class="main-articles-left-bottom-image">
+                    <img src="images/xbanner-02.jpg.pagespeed.ic.MQuZq6F18q.webp" alt="">
+                   </div> 
+                   <div class="main-articles-left-bottom-image">
+                    <img src="images/xbanner-03.jpg.pagespeed.ic.1rqLomOaMb.webp" alt="">
+                   </div> 
                 </div>
             </div>
-        </main>
-        <footer>
-            <p>Tous droits réservés par &copy <a href="">LMC-Shop</a></p>
-        </footer>
-        <script src="js/details--articles.js"></script>
-        <script src="js/all.min.js"></script>
-    </div>
+            <div class="main-articles-top-right">
+                <h2>Jupe Volante</h2>
+                <h2 style="color: var(--blue);">3 000 F / Unité</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magni nesciunt. Laborum, natus ullam</p>
+                <p>vente en gros à partir de 7 unités*</p>
+                <div class="main-articles-top-right-button">
+                    <button class="btn-add-cart"><i class="fa-solid fa-bag-shopping bag"></i>Ajouter au panier</button>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="main-top-image">
+            <div class="main-top-image-label">
+                
+            </div>
+            <h1>Vêtements</h1>
+        </div> -->
+        <p class="articles-connexes">Articles connexes</p>
+        <div class="main-right">
+            <div class="article">
+                <div class="article-image">
+                    <img src="images/jupe.png" alt="jupe">
+                </div>
+                <div class="article-price">
+                    <h3>Jupe volante</h3>
+                    <p><span>3500F</span> / unité</p>
+                    <p><span>1500F</span> / à partir de 5 unités</p>
+                </div>
+                <div class="article-command">
+                    <button class="btn-buy">Acheter</button>
+                    <button class="btn-plus">+</button>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-image">
+                    <img src="images/jupe.png" alt="jupe">
+                </div>
+                <div class="article-price">
+                    <h3>Jupe volante</h3>
+                    <p><span>3500F</span> / unité</p>
+                    <p><span>1500F</span> / à partir de 5 unités</p>
+                </div>
+                <div class="article-command">
+                    <button class="btn-buy">Acheter</button>
+                    <button class="btn-plus">+</button>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-image">
+                    <img src="images/jupe.png" alt="jupe">
+                </div>
+                <div class="article-price">
+                    <h3>Jupe volante</h3>
+                    <p><span>3500F</span> / unité</p>
+                    <p><span>1500F</span> / à partir de 5 unités</p>
+                </div>
+                <div class="article-command">
+                    <button class="btn-buy">Acheter</button>
+                    <button class="btn-plus">+</button>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-image">
+                    <img src="images/jupe.png" alt="jupe">
+                </div>
+                <div class="article-price">
+                    <h3>Jupe volante</h3>
+                    <p><span>3500F</span> / unité</p>
+                    <p><span>1500F</span> / à partir de 5 unités</p>
+                </div>
+                <div class="article-command">
+                    <button class="btn-buy">Acheter</button>
+                    <button class="btn-plus">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroller">
+            <i class="fa-solid fa-caret-up"></i>
+        </div>
+    </main>
+    <footer>
+        <p>Tous droits réservés par &copy<a href=""> LMC-shop</a></p>
+    </footer>
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/details--articles.js"></script>
 </body>
 </html>
