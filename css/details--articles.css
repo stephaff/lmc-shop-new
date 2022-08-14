@@ -824,9 +824,6 @@ footer{
 /* mobile design */
 
 @media screen and (max-width : 576px) {
-  body{
-    overflow-x: hidden;
-  }
   .slide-bar{
     width: 300px;
   }
@@ -994,6 +991,10 @@ footer{
   }
   footer{
     width: 100vw;
+  }
+  .wrapper{
+    width: 100vw;
+    overflow-x: hidden;
   }
 }
   
