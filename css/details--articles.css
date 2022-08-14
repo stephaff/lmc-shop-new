@@ -968,6 +968,9 @@ footer{
   }
   .main-articles-top-right-button button{
     height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .article{
     width: 92%;
