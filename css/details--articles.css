@@ -850,6 +850,7 @@ footer{
     width: 100vw;
     background-color: #fff;
     transition: 0.3s linear;
+    z-index: 2;
   }
   .display-search-bar{
     transform: translate(-400px);
@@ -914,6 +915,7 @@ footer{
     transform: translate(-230px);
   }
   main{
+    z-index: 1;
     /* padding-top: 3rem; */
   }
   .main-top-image{
